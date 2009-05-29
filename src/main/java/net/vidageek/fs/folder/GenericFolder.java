@@ -3,11 +3,7 @@ package net.vidageek.fs.folder;
 import java.util.List;
 
 import net.vidageek.fs.File;
-import net.vidageek.fs.FileSystemElement;
-import net.vidageek.fs.FileSystemElementMatcher;
-import net.vidageek.fs.FileVisitor;
 import net.vidageek.fs.Folder;
-import net.vidageek.fs.FolderVisitor;
 import net.vidageek.fs.file.GenericFile;
 
 final public class GenericFolder implements Folder {
@@ -37,11 +33,6 @@ final public class GenericFolder implements Folder {
         return null;
     }
 
-    public List<? extends FileSystemElement> list(final FileSystemElementMatcher matcher) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
     public List<? extends File> listFiles() {
         // TODO Auto-generated method stub
         return null;
@@ -50,16 +41,6 @@ final public class GenericFolder implements Folder {
     public List<? extends Folder> listFolders() {
         // TODO Auto-generated method stub
         return null;
-    }
-
-    public void visitFiles(final FileVisitor visitor) {
-        // TODO Auto-generated method stub
-
-    }
-
-    public void visitFolders(final FolderVisitor visitor) {
-        // TODO Auto-generated method stub
-
     }
 
     public boolean canRead() {
@@ -112,11 +93,6 @@ final public class GenericFolder implements Folder {
         return 0;
     }
 
-    public String relativizeFrom(final FileSystemElement element) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
     public void rename(final String newName) {
         // TODO Auto-generated method stub
 
@@ -135,11 +111,6 @@ final public class GenericFolder implements Folder {
     public java.io.File toJavaFile() {
         // TODO Auto-generated method stub
         return null;
-    }
-
-    public int compareTo(final FileSystemElement o) {
-        // TODO Auto-generated method stub
-        return 0;
     }
 
 }

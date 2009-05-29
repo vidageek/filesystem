@@ -1,20 +1,9 @@
 package net.vidageek.fs.file;
 
 import net.vidageek.fs.File;
-import net.vidageek.fs.FileSystemElement;
 import net.vidageek.fs.Folder;
 
 public class GenericFile implements File {
-
-    public java.io.File toJavaFile() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    public long lastModified() {
-        // TODO Auto-generated method stub
-        return 0;
-    }
 
     public Folder getWrappingFolder() {
         // TODO Auto-generated method stub
@@ -71,9 +60,9 @@ public class GenericFile implements File {
         return false;
     }
 
-    public String relativizeFrom(final FileSystemElement element) {
+    public long lastModified() {
         // TODO Auto-generated method stub
-        return null;
+        return 0;
     }
 
     public void rename(final String newName) {
@@ -91,9 +80,9 @@ public class GenericFile implements File {
 
     }
 
-    public int compareTo(final FileSystemElement o) {
+    public java.io.File toJavaFile() {
         // TODO Auto-generated method stub
-        return 0;
+        return null;
     }
 
 }

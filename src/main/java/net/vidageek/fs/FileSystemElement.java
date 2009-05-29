@@ -2,7 +2,7 @@ package net.vidageek.fs;
 
 import java.io.File;
 
-public interface FileSystemElement extends Comparable<FileSystemElement> {
+public interface FileSystemElement {
 
     File toJavaFile();
 
@@ -15,8 +15,6 @@ public interface FileSystemElement extends Comparable<FileSystemElement> {
     String getAbsolutePath();
 
     String getPath();
-
-    String relativizeFrom(FileSystemElement element);
 
     boolean isAbsolute();
 

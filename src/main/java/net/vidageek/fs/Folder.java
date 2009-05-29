@@ -21,10 +21,4 @@ public interface Folder extends FileSystemElement {
 
     List<? extends Folder> listFolders();
 
-    List<? extends FileSystemElement> list(FileSystemElementMatcher matcher);
-
-    void visitFiles(FileVisitor visitor);
-
-    void visitFolders(FolderVisitor visitor);
-
 }
