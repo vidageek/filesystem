@@ -1,0 +1,10 @@
+file visitor interface
+listing matcher (choose what to list)
+relativize for files and folders
+jar folder
+war folder
+zip folder
+ear folder
+svn folder
+git folder
+cvs folder
