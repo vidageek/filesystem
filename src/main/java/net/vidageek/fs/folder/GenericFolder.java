@@ -96,7 +96,7 @@ final public class GenericFolder implements Folder {
 
     }
 
-    public void setLastModified() {
+    public void setLastModified(final long milliseconds) {
 
     }
 
