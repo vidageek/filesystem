@@ -31,4 +31,9 @@ public interface FileSystemElement {
     void delete();
 
     void rename(String newName);
+
+    /**
+     * method to apply internal file structure modifications
+     */
+    void apply();
 }

@@ -78,4 +78,9 @@ public class GenericFile implements File {
         return null;
     }
 
+    public void apply() {
+        // TODO Auto-generated method stub
+
+    }
+
 }

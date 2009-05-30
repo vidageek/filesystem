@@ -108,4 +108,9 @@ final public class GenericFolder implements Folder {
 
         return null;
     }
+
+    public void apply() {
+        // TODO Auto-generated method stub
+
+    }
 }
