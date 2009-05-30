@@ -5,83 +5,76 @@ import net.vidageek.fs.Folder;
 
 public class GenericFile implements File {
 
+    private final java.io.File file;
+
+    public GenericFile(final java.io.File file) {
+        if (file == null) {
+            throw new IllegalArgumentException("null is not a valid file");
+        }
+        this.file = new java.io.File(file.getAbsolutePath());
+    }
+
     public Folder getWrappingFolder() {
-        // TODO Auto-generated method stub
         return null;
     }
 
     public long length() {
-        // TODO Auto-generated method stub
-        return 0;
+        return file.length();
     }
 
     public boolean canRead() {
-        // TODO Auto-generated method stub
         return false;
     }
 
     public boolean canWrite() {
-        // TODO Auto-generated method stub
         return false;
     }
 
     public void delete() {
-        // TODO Auto-generated method stub
 
     }
 
     public boolean exists() {
-        // TODO Auto-generated method stub
         return false;
     }
 
     public String getAbsolutePath() {
-        // TODO Auto-generated method stub
         return null;
     }
 
     public String getName() {
-        // TODO Auto-generated method stub
         return null;
     }
 
     public String getPath() {
-        // TODO Auto-generated method stub
         return null;
     }
 
     public boolean isAbsolute() {
-        // TODO Auto-generated method stub
         return false;
     }
 
     public boolean isHidden() {
-        // TODO Auto-generated method stub
         return false;
     }
 
     public long lastModified() {
-        // TODO Auto-generated method stub
-        return 0;
+        return file.lastModified();
     }
 
     public void rename(final String newName) {
-        // TODO Auto-generated method stub
 
     }
 
-    public void setLastModified() {
-        // TODO Auto-generated method stub
-
+    public void setLastModified(final long milliseconds) {
+        file.setLastModified(milliseconds);
     }
 
     public void setReadOnly() {
-        // TODO Auto-generated method stub
 
     }
 
     public java.io.File toJavaFile() {
-        // TODO Auto-generated method stub
         return null;
     }
 

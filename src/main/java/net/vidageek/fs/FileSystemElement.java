@@ -8,7 +8,7 @@ public interface FileSystemElement {
 
     long lastModified();
 
-    void setLastModified();
+    void setLastModified(long milliseconds);
 
     String getName();
 

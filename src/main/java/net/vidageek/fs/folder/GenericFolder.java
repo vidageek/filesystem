@@ -8,109 +8,104 @@ import net.vidageek.fs.file.GenericFile;
 
 final public class GenericFolder implements Folder {
 
-    public GenericFile createFile(final String fileName) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    public <T extends File> T createFile(final String fileName, final Class<T> fileType) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    public GenericFolder createFolder(final String folderName) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    public <T extends Folder> T createFolder(final String folderName, final Class<T> folderType) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
     public Folder getParent() {
-        // TODO Auto-generated method stub
+
         return null;
     }
 
     public List<? extends File> listFiles() {
-        // TODO Auto-generated method stub
+
         return null;
     }
 
     public List<? extends Folder> listFolders() {
-        // TODO Auto-generated method stub
+
+        return null;
+    }
+
+    public GenericFile openFile(final String fileName) {
+
+        return null;
+    }
+
+    public <T extends File> T openFile(final T t) {
+
+        return null;
+    }
+
+    public GenericFolder openFolder(final String folderName) {
+
+        return null;
+    }
+
+    public <T extends Folder> T openFolder(final T t) {
+
         return null;
     }
 
     public boolean canRead() {
-        // TODO Auto-generated method stub
+
         return false;
     }
 
     public boolean canWrite() {
-        // TODO Auto-generated method stub
+
         return false;
     }
 
     public void delete() {
-        // TODO Auto-generated method stub
 
     }
 
     public boolean exists() {
-        // TODO Auto-generated method stub
+
         return false;
     }
 
     public String getAbsolutePath() {
-        // TODO Auto-generated method stub
+
         return null;
     }
 
     public String getName() {
-        // TODO Auto-generated method stub
+
         return null;
     }
 
     public String getPath() {
-        // TODO Auto-generated method stub
+
         return null;
     }
 
     public boolean isAbsolute() {
-        // TODO Auto-generated method stub
+
         return false;
     }
 
     public boolean isHidden() {
-        // TODO Auto-generated method stub
+
         return false;
     }
 
     public long lastModified() {
-        // TODO Auto-generated method stub
+
         return 0;
     }
 
     public void rename(final String newName) {
-        // TODO Auto-generated method stub
 
     }
 
     public void setLastModified() {
-        // TODO Auto-generated method stub
 
     }
 
     public void setReadOnly() {
-        // TODO Auto-generated method stub
 
     }
 
     public java.io.File toJavaFile() {
-        // TODO Auto-generated method stub
+
         return null;
     }
-
 }

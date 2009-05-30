@@ -7,13 +7,13 @@ import net.vidageek.fs.folder.GenericFolder;
 
 public interface Folder extends FileSystemElement {
 
-    GenericFile createFile(String fileName);
+    GenericFile openFile(String fileName);
 
-    <T extends File> T createFile(String fileName, Class<T> fileType);
+    <T extends File> T openFile(T t);
 
-    GenericFolder createFolder(String folderName);
+    GenericFolder openFolder(String folderName);
 
-    <T extends Folder> T createFolder(String folderName, Class<T> folderType);
+    <T extends Folder> T openFolder(T t);
 
     Folder getParent();
 
